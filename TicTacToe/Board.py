@@ -45,10 +45,10 @@ class Board:
             self.field = field_preset
         else:
             # intialize empty field
-            self.field = [[None for x in range(self.num_rows)] for y in range(self.num_cols)]
+            self.field = [[' ' for x in range(self.num_rows)] for y in range(self.num_cols)]
 
     def is_empty(self, value):
-        if value == " ":
+        if value == ' ':
             return True
         
         return False
