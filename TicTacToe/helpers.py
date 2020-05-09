@@ -1,18 +1,12 @@
 def unique_2d(list1): 
-  
-    # intilize a null list 
-    unique_list = []
+    # intilize an empty set
+    my_set = set()
 
-    # get number of rows and cols
+    # get number of rows
     rows = len(list1)
-    cols = len(list1[0])
       
-    # traverse for all elements 
+    # traverse for all rows
     for i in range(rows): 
-        for j in range(cols):
-            x = list1[i][j]
-            # check if exists in unique_list or not 
-            if x not in unique_list: 
-                unique_list.append(x)
+        my_set.update(list1[i])
     
-    return unique_list
+    return list(my_set)
