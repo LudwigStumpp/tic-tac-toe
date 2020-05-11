@@ -8,7 +8,7 @@ from TicTacToe.Board import Board, WrongConfigurationException, CantMakeMoveExce
 class TestHelpers(unittest.TestCase):
     def test_unique_2d(self):
         array = [["a", "b"], ["b", "c"]]
-        self.assertEqual(unique_2d(array), ["a", "b", "c"])
+        self.assertCountEqual(unique_2d(array), ["a", "b", "c"])
 
         array = [[], []]
         self.assertEqual(unique_2d(array), [])
