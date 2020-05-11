@@ -39,7 +39,7 @@ class Board:
             unique_values = unique_2d(field_preset)
             for value in unique_values:
                 if not self.is_valid_stone(value):
-                    raise WrongConfigurationException('preset field must have same stones as specified with stone_p1 and stone_p2 or " " for empty')
+                    raise WrongConfigurationException('preset field must have same stones as specified with stone_p1 and stone_p2 or " " for an empty field')
 
             # all correct
             self.field = field_preset
